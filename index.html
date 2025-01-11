@@ -5,10 +5,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 
-	<link
-		href="./lightgallery-bundle.css"
-		rel="stylesheet"
-	/>
+	<link href="./lightgallery-bundle.css" rel="stylesheet" />
 	<link
 		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
 		rel="stylesheet"
@@ -36,35 +33,41 @@
 <style>
 	body {
 		min-height: 100vh;
-        align-items: center;
+		align-items: center;
+        background-color: rgb(223, 240, 255);
 	}
-    #animated-thumbnails{
-        margin-left: 10vw;
-        width: 80vw;
-    }
-    .loc {
+    .heading{
         
     }
+	#animated-thumbnails {
+		margin-left: 10vw;
+		width: 80vw;
+	}
+	.loc {
+	}
 	.cam-settings {
 		font-family: "Lexend", serif !important ;
 		font-optical-sizing: auto;
 		font-weight: 400;
 		font-style: normal;
 	}
-    .caption-text {
-        color: #9c9c9c;
-    }
+	.caption-text {
+		color: #9c9c9c;
+	}
 </style>
 
 <html>
-    <span class="cam-settings"></span>
+    <span class="heading">hello</span>
 	<div id="animated-thumbnails">
 		<!-- 
     <a href="https://picsum.photos/600/400?random=5" data-lg-size="600-400">
         <img alt="img2" src="https://picsum.photos/600/400?random=5" />
     </a> -->
+
+
 	</div>
 </html>
+
 <script type="text/javascript">
 	fetch("./info.json")
 		.then((res) => {
@@ -73,9 +76,13 @@
 		.then((data) => {
 			i = 0;
 			for (i = data.images.length - 1; i >= 0; i--) {
-                var loc = data.images[i].location?("Location: " + data.images[i].location + "  •  "):""
-                var settings = data.images[i].settings?("Location: " + data.images[i].location):""
-                console.log(loc)
+				var loc = data.images[i].location
+					? "Location: " + data.images[i].location + "  •  "
+					: "";
+				var settings = data.images[i].settings
+					? "Location: " + data.images[i].location
+					: "";
+				console.log(loc);
 				document
 					.getElementById("animated-thumbnails")
 					.insertAdjacentHTML(
@@ -84,11 +91,16 @@
 							data.images[i].name +
 							'" data-lg-size="' +
 							data.images[i].dimensions +
-							'" data-sub-html="<div class=\'caption-text\'>' + loc  + "<span class='cam-settings'>" + data.images[i].settings + '</span> "><img alt="' +
+							"\" data-sub-html=\"<div class='caption-text'>" +
+							loc +
+							"<span class='cam-settings'>" +
+							data.images[i].settings +
+							'</span> "><img alt="' +
 							data.images[i].description +
 							'" src="./img/full/' +
 							data.images[i].name +
-							'" data-sub-html=' + '/></a>'
+							'" data-sub-html=' +
+							"/></a>"
 					);
 			}
 		})
@@ -97,10 +109,10 @@
 				.justifiedGallery({
 					captions: true,
 					lastRow: "center",
-					rowHeight: 180,
+					rowHeight: 250,
 					margins: 5,
-                    html: true,
-                    counter:true,
+					html: true,
+					counter: true,
 				})
 				.on("jg.complete", function () {
 					window.lightGallery(
