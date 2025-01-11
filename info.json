@@ -5,7 +5,7 @@
             "group": "aviation",
 			"description": "IAF MiG 29",
 			"dimensions": "5342-3561",
-			"settings": "1/320s ISO100 f/4",
+			"settings": "1/320s <b>ISO</b>100 f/4",
             "location": "BITS Goa"
 		},
         {

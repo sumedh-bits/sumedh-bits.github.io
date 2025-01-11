@@ -5,7 +5,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 
-	<link href="./lightgallery-bundle.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery.css" rel="stylesheet" />
+	<!-- <link href="./lightgallery-bundle.css" rel="stylesheet" /> -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
 		rel="stylesheet"
@@ -22,12 +23,11 @@
 		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css"
 		rel="stylesheet"
 	/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
-		rel="stylesheet"
-	/>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -44,17 +44,27 @@
 		margin-left: 10vw;
 		width: 80vw;
 	}
+	.iso-bold{
+		font-weight: 550;
+	}
 	.loc {
 	}
 	.cam-settings {
 		font-family: "Lexend", serif !important ;
 		font-optical-sizing: auto;
-		font-weight: 400;
+		font-weight: 300;
 		font-style: normal;
+		word-spacing: 3px;
 	}
 	.caption-text {
 		color: #9c9c9c;
 	}
+	.material-icons {
+  		vertical-align: middle !important;
+  		padding-bottom: 4px;
+		font-size: 16px;
+	}
+
 </style>
 
 <html>
@@ -80,11 +90,9 @@
 			i = 0;
 			for (i = 0; i < data.images.length; i++) {
 				var loc = data.images[i].location
-					? "Location: " + data.images[i].location + "  •  "
+					? "<span> <span class='material-icons'>place</span><span style='display:inline-block; width: 3px;'></span>" + data.images[i].location + " <span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span></span> "
 					: "";
-				var settings = data.images[i].settings
-					? "Location: " + data.images[i].location
-					: "";
+				var settings = data.images[i].settings.replace("ISO", "<span class='iso-bold'>ISO</span>")
 				console.log(loc);
 				document
 					.getElementById("animated-thumbnails")
@@ -97,7 +105,7 @@
 							"\" data-sub-html=\"<div class='caption-text'>" +
 							loc +
 							"<span class='cam-settings'>" +
-							data.images[i].settings +
+							settings +
 							'</span> "><img alt="' +
 							data.images[i].description +
 							'" src="assets/images/full/' +
