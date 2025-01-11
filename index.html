@@ -80,7 +80,7 @@
 		})
 		.then((data) => {
 			i = 0;
-			for (i = data.images.length - 1; i >= 0; i--) {
+			for (i = 0; i < data.images.length; i++) {
 				var loc = data.images[i].location
 					? "Location: " + data.images[i].location + "  •  "
 					: "";
