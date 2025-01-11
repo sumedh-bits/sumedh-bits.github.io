@@ -36,6 +36,9 @@
 		align-items: center;
         background-color: rgb(223, 240, 255);
 	}
+	.heading-wrapper {
+		background-color: #202020;
+	}
     .heading{
         
     }
@@ -57,7 +60,9 @@
 </style>
 
 <html>
-    <span class="heading">hello</span>
+	<div class="heading-wrapper">
+		<span class="heading">hello</span>
+	</div>
 	<div id="animated-thumbnails">
 		<!-- 
     <a href="https://picsum.photos/600/400?random=5" data-lg-size="600-400">
@@ -87,7 +92,7 @@
 					.getElementById("animated-thumbnails")
 					.insertAdjacentHTML(
 						"beforeend",
-						'<a href="./img/full/' +
+						'<a href="./assets/img/full/' +
 							data.images[i].name +
 							'" data-lg-size="' +
 							data.images[i].dimensions +
