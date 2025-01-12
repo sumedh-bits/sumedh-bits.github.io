@@ -3,10 +3,10 @@
         {
             "name": "_DSC0612.jpg",
             "group": "",
-            "description": "Funny lil birb",
+            "description": "Red-whiskered Bulbul",
             "dimensions": "4817-3211",
             "settings": "1/250s ISO1600 f/6.3",
-            "location": "BITS Goa"
+            "location": "BPGC"
         },
         {
             "name": "_DSC0229.jpg",
@@ -30,7 +30,7 @@
             "description": "",
             "dimensions": "3624-2416",
             "settings": "1/500s ISO1400 f/6.3",
-            "location": ""
+            "location": "Ratnagiri"
         },
         {
             "name": "_DSC0461.jpg",
@@ -38,7 +38,7 @@
             "description": "",
             "dimensions": "4000-6000",
             "settings": "1/500s ISO560 f/5.3",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0501.jpg",
@@ -46,7 +46,7 @@
             "description": "",
             "dimensions": "6000-4000",
             "settings": "1/1250s ISO3200 f/4.8",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0731.jpg",
@@ -54,15 +54,15 @@
             "description": "",
             "dimensions": "6000-4000",
             "settings": "1/250s ISO900 f/5.3",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0323.jpg",
             "group": "",
-            "description": "",
+            "description": "Resident fat car",
             "dimensions": "6000-4000",
             "settings": "1/100s ISO450 f/6.0",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0939.jpg",
@@ -70,7 +70,7 @@
             "description": "",
             "dimensions": "5095-3397",
             "settings": "1/320s ISO3600 f/6.3",
-            "location": ""
+            "location": "Ratnagiri"
         },
         {
             "name": "_DSC0521.jpg",
@@ -78,7 +78,7 @@
             "description": "",
             "dimensions": "5342-3561",
             "settings": "1/800s ISO160 f/6.3",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0592.jpg",
@@ -86,15 +86,15 @@
             "description": "",
             "dimensions": "2650-1767",
             "settings": "1/500s ISO100 f/10.0",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0225.jpg",
             "group": "",
-            "description": "IAF Dornier 228",
+            "description": "Indian Navy Dornier 228",
             "dimensions": "5252-3501",
             "settings": "1/800s ISO400 f/6.3",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0543.jpg",
@@ -102,7 +102,7 @@
             "description": "Indian Navy Poseidon P-8I",
             "dimensions": "5191-3461",
             "settings": "1/500s ISO100 f/16.0",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0582.jpg",
@@ -110,7 +110,7 @@
             "description": "",
             "dimensions": "5285-3523",
             "settings": "1/3200s ISO400 f/5.0",
-            "location": ""
+            "location": "BPGC"
         },
         {
             "name": "_DSC0409.jpg",
@@ -118,7 +118,39 @@
             "description": "",
             "dimensions": "4342-2895",
             "settings": "1/400s ISO400 f/6.0",
+            "location": "BPGC"
+        },
+        {
+            "name": "sunset.jpg",
+            "group": "",
+            "description": "Way back home",
+            "dimensions": "4342-2895",
+            "settings": "1/14s ISO2150 f/1.89",
             "location": ""
+        },
+        {
+            "name": "20221026_061243.jpg",
+            "group": "",
+            "description": "Vacations!",
+            "dimensions": "4624-2604",
+            "settings": "1/35s ISO500 f/1.8",
+            "location": ""
+        },
+        {
+            "name": "20240915_113942.jpg",
+            "group": "",
+            "description": "",
+            "dimensions": "2604-4624",
+            "settings": "1/50s ISO25 f/1.8",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC0454.jpg",
+            "group": "",
+            "description": "",
+            "dimensions": "2845-5041",
+            "settings": "(Lost the settings)",
+            "location": "Nashik"
         }
     ]
 }
