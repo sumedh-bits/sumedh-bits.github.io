@@ -48,14 +48,12 @@
 	.iso-bold{
 		font-weight: 550;
 	}
-	.loc {
-	}
 	.cam-settings {
 		font-family: "JetBrains Mono" !important ;
 		font-optical-sizing: auto;
 		font-weight: 300;
 		font-style: normal;
-		word-spacing: 2px;
+		word-spacing: 1px;
 	}
 	.caption-text {
 		color: #9c9c9c;
@@ -94,22 +92,25 @@
 					? "<span> <span class='material-icons'>place</span><span style='display:inline-block; width: 3px;'></span>" + data.images[i].location + " <span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span></span> "
 					: "";
 				var settings = data.images[i].settings.replace("ISO", "<span class='iso-bold'>ISO</span>")
+				var desc = data.images[i].description
+					? data.images[i].description + "<span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span>"
+					: "";
 				console.log(loc);
 				document
 					.getElementById("animated-thumbnails")
 					.insertAdjacentHTML(
 						"beforeend",
-						'<a href="assets/images/full/' +
+						'<a href="assets/images/thumb/' +
 							data.images[i].name +
 							'" data-lg-size="' +
 							data.images[i].dimensions +
-							"\" data-sub-html=\"<div class='caption-text'>" +
+							"\" data-sub-html=\"<div class='caption-text'>" + desc + 
 							loc +
 							"<span class='cam-settings'>" +
 							settings +
-							'</span> "><img alt="' +
+							'</span>" data-download-url="assets/images/full/' + data.images[i].name + '"><img alt="' +
 							data.images[i].description +
-							'" src="assets/images/full/' +
+							'" src="assets/images/thumb/' +
 							data.images[i].name +
 							'"/></a>'
 					);
@@ -124,6 +125,8 @@
 					margins: 5,
 					html: true,
 					counter: true,
+					zoomFromOrigin: true,
+					zoom: false
 				})
 				.on("jg.complete", function () {
 					window.lightGallery(
