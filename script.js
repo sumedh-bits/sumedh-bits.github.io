@@ -10,11 +10,11 @@ fetch("./info2.json")
 			var loc = data.images[i].location
 				? "<span><span class='material-icons'>place</span><span style='display:inline-block; width: 3px;'></span>" +
 				  data.images[i].location +
-				  "<span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span></span>"
+				  "<span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 2px;'></span></span>"
 				: "";
 			var settings = data.images[i].settings.replace(
 				"ISO",
-				"<span class='iso-bold'>ISO</span>"
+				"<span class='iso-bold'>ISO</span>&emsp14;"
 			);
 			var desc = data.images[i].description
 				? data.images[i].description +
