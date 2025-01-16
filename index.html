@@ -55,7 +55,7 @@
 	}
 	.heading-wrapper {
 		display: grid;
-		background-color: #39261c;
+		background-color: #A1683A;
 		padding: 5%;
 		width: 100vw;
 		align-items: center;
@@ -64,7 +64,7 @@
 	.heading {
 		font-family: GothamPro;
 		font-weight: 800;
-		color: #e7c644;
+		color: #FBF7F4;
 		font-size: 3.5em;
 	}
 	.filter-buttons {
@@ -97,6 +97,29 @@
 	}
 	.lg-toolbar {
 		padding-right: 0.5em;
+	}
+	.btn-custom-primary,
+	.btn-custom-outline-primary {
+		--bs-btn-color: var(--bs-white);
+		--bs-btn-bg: var(--bd-violet-bg);
+		--bs-btn-border-color: var(--bd-violet-bg);
+		--bs-btn-hover-color: var(--bs-white);
+		--bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+		--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+	}
+	.btn-primary {
+		background-color: #A1683A;
+		border-color: #A1683A;
+		color: #fbf7f4;
+	}
+	.btn-outline-primary {
+		border-color: #A1683A;
+		color: #A1683A;
+	}
+	.btn-primary:hover, .btn-outline-primary:hover {
+		background-color: #A1683A;
+		color: #fbf7f4;
+		border-color: #A1683A;
 	}
 	.btn-primary:focus {
 		color: #fff;
