@@ -1,12 +1,15 @@
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/lightgallery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/zoom/lg-zoom.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
-
-	<link href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery.css" rel="stylesheet" />
+	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+	<script src="./script.js"></script>
+	<link
+		href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery.css"
+		rel="stylesheet"
+	/>
 	<!-- <link href="./lightgallery-bundle.css" rel="stylesheet" /> -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
@@ -24,28 +27,39 @@
 		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css"
 		rel="stylesheet"
 	/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	<link href=" https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css " rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet"
+	/>
+	<link
+		href=" https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css "
+		rel="stylesheet"
+	/>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css"
+		rel="stylesheet"
+	/>
 </head>
 
 <style>
 	body {
 		min-height: 100vh;
 		align-items: center;
-        background-color: #e3d3ca;
+		background-color: #e3d3ca;
 	}
 	.heading-wrapper {
 		display: grid;
-		background-color: #31231c;
+		background-color: #39261c;
 		padding: 5%;
 		width: 100vw;
 		align-items: center;
-		margin-bottom: 5vh;
+		margin-bottom: 2.5vh;
 	}
 	.heading {
 		font-family: GothamPro;
@@ -53,12 +67,17 @@
 		color: #e7c644;
 		font-size: 3.5em;
 	}
+	.filter-buttons {
+		margin-bottom: 2.5vh;
+		width: 100%;
+		text-align: center;
+	}
 
 	#animated-thumbnails {
 		margin-left: 5vw;
 		width: 90vw;
 	}
-	.iso-bold{
+	.iso-bold {
 		font-weight: 550;
 	}
 	.cam-settings {
@@ -72,94 +91,61 @@
 		color: #9c9c9c;
 	}
 	.material-icons {
-  		vertical-align: middle !important;
-  		padding-bottom: 4px;
+		vertical-align: middle !important;
+		padding-bottom: 4px;
 		font-size: 16px;
 	}
 	.lg-toolbar {
 		padding-right: 0.5em;
 	}
-
+	.btn-primary:focus {
+		color: #fff;
+		background-color: #0b5ed7;
+		border-color: #0a58ca;
+		box-shadow: none !important;
+	}
 </style>
 
 <html>
 	<div class="heading-wrapper">
-		<center><span class="heading">Photos clicked by me, Sumedh.</span></center>
+		<center>
+			<span class="heading">Photos clicked by me, Sumedh.</span>
+		</center>
 	</div>
-	<div id="animated-thumbnails">
-		<!-- 
-    <a href="https://picsum.photos/600/400?random=5" data-lg-size="600-400">
-        <img alt="img2" src="https://picsum.photos/600/400?random=5" />
-    </a> -->
-
-
+	<div class="filter-buttons">
+		<button
+			type="button"
+			class="btn btn-primary"
+			onclick="filter(this)"
+			filter-attr="*"
+		>
+			All
+		</button>
+		&nbsp;
+		<button
+			type="button"
+			class="btn btn-outline-primary"
+			onclick="filter(this)"
+			filter-attr="BPGC"
+		>
+			BPGC</button
+		>&nbsp;
+		<button
+			type="button"
+			class="btn btn-outline-primary"
+			onclick="filter(this)"
+			filter-attr="Ratnagiri"
+		>
+			Ratnagiri</button
+		>&nbsp;
+		<button
+			type="button"
+			class="btn btn-outline-primary"
+			onclick="filter(this)"
+			filter-attr="Nashik"
+		>
+			Nashik
+		</button>
 	</div>
+	<div id="animated-thumbnails"></div>
 </html>
-
-<script type="text/javascript">
-	fetch("./info2.json")
-		.then((res) => {
-			return res.json();
-		})
-		.then((data) => {
-			i = 0;
-			for (i = 0; i < data.images.length; i++) {
-				var loc = data.images[i].location
-					? "<span><span class='material-icons'>place</span><span style='display:inline-block; width: 3px;'></span>" + data.images[i].location + "<span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span></span>"
-					: "";
-				var settings = data.images[i].settings.replace("ISO", "<span class='iso-bold'>ISO</span>")
-				var desc = data.images[i].description
-					? data.images[i].description + "<span style='display:inline-block; width: 3px;'></span> • <span style='display:inline-block; width: 3px;'></span>"
-					: "";
-				console.log(loc);
-				document
-					.getElementById("animated-thumbnails")
-					.insertAdjacentHTML(
-						"beforeend",
-						'<a href="assets/images/thumb/' +
-							data.images[i].name +
-							'" data-lg-size="' +
-							data.images[i].dimensions +
-							"\" data-sub-html=\"<div class='caption-text'>" + desc + 
-							loc +
-							"<span class='cam-settings'>" +
-							settings +
-							'</span>" data-download-url="assets/images/full/' + data.images[i].name + '"><img alt="' +
-							data.images[i].description +
-							'" src="assets/images/thumb/' +
-							data.images[i].name +
-							'"/></a>'
-					);
-			}
-		})
-		.then(() => {
-			$("#animated-thumbnails")
-				.justifiedGallery({
-					captions: true,
-					lastRow: "center",
-					rowHeight: 250,
-					margins: 15,
-					html: true,
-					counter: true,
-					zoomFromOrigin: true,
-					zoom: false
-				})
-				.on("jg.complete", function () {
-					window.lightGallery(
-						document.getElementById("animated-thumbnails"),
-						{
-							pager: false,
-							galleryId: "nature",
-							plugins: [lgZoom, lgThumbnail],
-							mode: "lg-fade",
-							mobileSettings: {
-								controls: false,
-								showCloseIcon: true,
-								download: true,
-								rotate: false,
-							},
-						}
-					);
-				});
-		});
-</script>
