@@ -36,7 +36,7 @@ fetch("./info2.json")
 						'</span>" data-download-url="assets/images/full/' +
 						data.images[i].name +
 						'" data-filter-attr="' +
-						data.images[i].location +
+						data.images[i].group +
 						'"><img alt="' +
 						data.images[i].description +
 						'" src="assets/images/thumb/' +
@@ -48,7 +48,7 @@ fetch("./info2.json")
 	.then((data) => {
 		gallery = $("#animated-thumbnails");
 		gallery.justifiedGallery({
-			randomize: true,
+			randomize: false,
 			captions: true,
 			lastRow: "center",
 			rowHeight: 250,
