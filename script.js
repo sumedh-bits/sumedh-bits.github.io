@@ -1,3 +1,10 @@
+$(document).ready(function() {
+    if(window.innerWidth<500)
+    $(".filter-buttons").find("button").addClass("btn-sm")
+})
+
+
+
 var plugin, gallery, jgplugin, jsondata;
 fetch("./info2.json")
 	.then((res) => {
