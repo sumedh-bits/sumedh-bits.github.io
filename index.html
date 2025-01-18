@@ -73,13 +73,19 @@
 	@media screen and (max-width: 500px) {
 		.heading {
 			font-size: 8vw;
-		}		
+		}
+	}
+	.filter-buttons-container {
+		text-align: center;
+		width: 100%;
+		margin: none;
 	}
 	.filter-buttons {
 		margin-bottom: 2.5vh;
-		width: 85%;
+		max-width: 85%;
 		margin: auto;
 		text-align: center;
+		align-items: center;
 	}
 
 	#animated-thumbnails {
@@ -120,10 +126,14 @@
 		background-color: #a1683a;
 		border-color: #a1683a;
 		color: #fbf7f4;
+		margin-left: 4px;
+		margin-right: 4px;
 	}
 	.btn-outline-primary {
 		border-color: #a1683a;
 		color: #a1683a;
+		margin-left: 4px;
+		margin-right: 4px;
 	}
 	.btn-primary:hover,
 	.btn-outline-primary:hover {
@@ -154,39 +164,41 @@
 	<div class="heading-wrapper">
 		<span class="heading">Photos clicked by me, Sumedh.</span>
 	</div>
-	<div class="filter-buttons">
-		<button
-			type="button"
-			class="btn btn-primary"
-			onclick="filter(this)"
-			filter-attr="*"
-		>
-			All</button
-		><span style="display: inline-block; width: 1px"></span>
-		<button
-			type="button"
-			class="btn btn-outline-primary"
-			onclick="filter(this)"
-			filter-attr="Nature"
-		>
-			Nature</button
-		><span style="display: inline-block; width: 1px"></span>
-		<button
-			type="button"
-			class="btn btn-outline-primary"
-			onclick="filter(this)"
-			filter-attr="Aviation"
-		>
-			Aviation</button
-		><span style="display: inline-block; width: 1px"></span>
-		<button
-			type="button"
-			class="btn btn-outline-primary"
-			onclick="filter(this)"
-			filter-attr="WnP"
-		>
-			Wildlife and Pets
-		</button>
+	<div class="filter-buttons-container">
+		<div class="filter-buttons btn-group" role="group">
+			<button
+				type="button"
+				class="btn btn-primary"
+				onclick="filter(this)"
+				filter-attr="*"
+			>
+				All</button
+			><span style="display: inline-block; width: 1px"></span>
+			<button
+				type="button"
+				class="btn btn-outline-primary"
+				onclick="filter(this)"
+				filter-attr="Nature"
+			>
+				Nature</button
+			><span style="display: inline-block; width: 1px"></span>
+			<button
+				type="button"
+				class="btn btn-outline-primary"
+				onclick="filter(this)"
+				filter-attr="Aviation"
+			>
+				Aviation</button
+			><span style="display: inline-block; width: 1px"></span>
+			<button
+				type="button"
+				class="btn btn-outline-primary"
+				onclick="filter(this)"
+				filter-attr="Animals"
+			>
+				Animals
+			</button>
+		</div>
 	</div>
 	<div id="animated-thumbnails"></div>
 </html>
