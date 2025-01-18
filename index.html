@@ -61,14 +61,19 @@
 		background-color: #a1683a;
 		padding: 5%;
 		width: 100vw;
-		align-items: center;
+		text-align: center;
 		margin-bottom: 2.5vh;
 	}
 	.heading {
 		font-family: GothamPro;
 		font-weight: 800;
 		color: #fbf7f4;
-		font-size: 3.5em;
+		font-size: 4.5vw;
+	}
+	@media screen and (max-width: 500px) {
+		.heading {
+			font-size: 8vw;
+		}		
 	}
 	.filter-buttons {
 		margin-bottom: 2.5vh;
@@ -147,9 +152,7 @@
 
 <html>
 	<div class="heading-wrapper">
-		<center>
-			<span class="heading">Photos clicked by me, Sumedh.</span>
-		</center>
+		<span class="heading">Photos clicked by me, Sumedh.</span>
 	</div>
 	<div class="filter-buttons">
 		<button
