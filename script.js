@@ -82,10 +82,8 @@ fetch("./info2.json")
 				}
 			);
 		}, 100);
-		Array.from(gallery.find("a")).forEach(function (element, index) {
-			$(element).addClass("gallery-item");
+		gallery.find("a").addClass("gallery-item");
 			//$(element).addClass(data.images[index].location)
-		});
 		//gallery.isotope({sele})
 	});
 

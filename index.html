@@ -1,204 +1,66 @@
+<!-- prettier-ignore -->
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/lightgallery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
-	<script src="./script.js"></script>
-	<link
-		href=" https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css "
-		rel="stylesheet"
-	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery.css"
-		rel="stylesheet"
-	/>
-	<!-- <link href="./lightgallery-bundle.css" rel="stylesheet" /> -->
-	<link
-		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		rel="stylesheet"
-	/>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="preconnect" href="https://rsms.me/" />
-	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css"
-		rel="stylesheet"
-	/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+    <script src="./script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="./index.css" rel="stylesheet"/>
+    <link href=" https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css " rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css" rel="stylesheet"/>
 </head>
 
-<style>
-	body {
-		overflow-x: hidden;
-		width: 100vw;
-		min-height: 100vh;
-		align-items: center;
-		background-color: #e3d3ca;
-	}
-	.heading-wrapper {
-		display: grid;
-		background-color: #a1683a;
-		padding: 5%;
-		width: 100vw;
-		text-align: center;
-		margin-bottom: 17px;
-	}
-	.heading {
-		font-family: GothamPro;
-		font-weight: 800;
-		color: #fbf7f4;
-		font-size: 4.5vw;
-	}
-	@media screen and (max-width: 500px) {
-		.heading {
-			font-size: 8vw;
-		}
-	}
-	.filter-buttons-container {
-		text-align: center;
-		width: 100%;
-		margin-bottom: 9px;
-	}
-	.filter-buttons {
-		margin-bottom: 2.5vh;
-		max-width: 85%;
-		margin: auto;
-		text-align: center;
-		align-items: center;
-	}
-
-	#animated-thumbnails {
-		margin: auto;
-		width: 90vw;
-	}
-	.iso-bold {
-		font-weight: 550;
-	}
-	.cam-settings {
-		font-family: "JetBrains Mono" !important ;
-		font-optical-sizing: auto;
-		font-weight: 300;
-		font-style: normal;
-		word-spacing: 1px;
-	}
-	.caption-text {
-		color: #9c9c9c;
-	}
-	.material-icons {
-		vertical-align: middle !important;
-		padding-bottom: 4px;
-		font-size: 16px;
-	}
-	.lg-toolbar {
-		padding-right: 0.5em;
-	}
-	.btn-custom-primary,
-	.btn-custom-outline-primary {
-		--bs-btn-color: var(--bs-white);
-		--bs-btn-bg: var(--bd-violet-bg);
-		--bs-btn-border-color: var(--bd-violet-bg);
-		--bs-btn-hover-color: var(--bs-white);
-		--bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-		--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-	}
-	.btn-primary {
-		background-color: #a1683a;
-		border-color: #a1683a;
-		color: #fbf7f4;
-		margin-left: 4px;
-		margin-right: 4px;
-	}
-	.btn-outline-primary {
-		border-color: #a1683a;
-		color: #a1683a;
-		margin-left: 4px;
-		margin-right: 4px;
-	}
-	.btn-primary:hover,
-	.btn-outline-primary:hover {
-		background-color: #a1683a;
-		color: #fbf7f4;
-		border-color: #a1683a;
-	}
-	.btn-primary:selected {
-		background-color: #a1683a;
-		color: #fbf7f4;
-		border-color: #a1683a;
-	}
-	.btn-primary:focus {
-		background-color: #a1683a;
-		color: #fbf7f4;
-		border-color: #a1683a;
-		box-shadow: none !important;
-	}
-	.jg-caption {
-		text-align: center;
-		padding-left: 10px;
-		font-family: Inter, sans-serif !important;
-		font-size: 15px !important;
-	}
-</style>
-
 <html>
-	<div class="heading-wrapper">
-		<span class="heading">Photos clicked by me, Sumedh.</span>
-	</div>
-	<div class="filter-buttons-container">
-		<div class="filter-buttons btn-group" role="group">
-			<button
-				type="button"
-				class="btn btn-primary"
-				onclick="filter(this)"
-				filter-attr="*"
-			>
-				All</button
-			><span style="display: inline-block; width: 1px"></span>
-			<button
-				type="button"
-				class="btn btn-outline-primary"
-				onclick="filter(this)"
-				filter-attr="Nature"
-			>
-				Nature</button
-			><span style="display: inline-block; width: 1px"></span>
-			<button
-				type="button"
-				class="btn btn-outline-primary"
-				onclick="filter(this)"
-				filter-attr="Aviation"
-			>
-				Aviation</button
-			><span style="display: inline-block; width: 1px"></span>
-			<button
-				type="button"
-				class="btn btn-outline-primary"
-				onclick="filter(this)"
-				filter-attr="Animals"
-			>
-				Animals
-			</button>
-		</div>
-	</div>
-	<div id="animated-thumbnails"></div>
+    <div class="heading-wrapper">
+        <span class="heading">Photos clicked by me, Sumedh.</span>
+    </div>
+    <div class="filter-buttons-container">
+        <div class="filter-buttons btn-group" role="group">
+            <button
+                type="button"
+                class="btn btn-primary"
+                onclick="filter(this)"
+                filter-attr="*"
+            >
+                All</button
+            ><span style="display: inline-block; width: 1px"></span>
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="filter(this)"
+                filter-attr="Nature"
+            >
+                Nature</button
+            ><span style="display: inline-block; width: 1px"></span>
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="filter(this)"
+                filter-attr="Aviation"
+            >
+                Aviation</button
+            ><span style="display: inline-block; width: 1px"></span>
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="filter(this)"
+                filter-attr="Animals"
+            >
+                Animals
+            </button>
+        </div>
+    </div>
+    <div id="animated-thumbnails"></div>
 </html>
