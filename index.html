@@ -36,8 +36,8 @@
 	/>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	<link rel="preconnect" href="https://rsms.me/" />
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
 		rel="stylesheet"
@@ -58,7 +58,7 @@
 	}
 	.heading-wrapper {
 		display: grid;
-		background-color: #A1683A;
+		background-color: #a1683a;
 		padding: 5%;
 		width: 100vw;
 		align-items: center;
@@ -67,12 +67,13 @@
 	.heading {
 		font-family: GothamPro;
 		font-weight: 800;
-		color: #FBF7F4;
+		color: #fbf7f4;
 		font-size: 3.5em;
 	}
 	.filter-buttons {
 		margin-bottom: 2.5vh;
-		width: 100%;
+		width: 85%;
+		margin: auto;
 		text-align: center;
 	}
 
@@ -111,28 +112,29 @@
 		--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
 	}
 	.btn-primary {
-		background-color: #A1683A;
-		border-color: #A1683A;
+		background-color: #a1683a;
+		border-color: #a1683a;
 		color: #fbf7f4;
 	}
 	.btn-outline-primary {
-		border-color: #A1683A;
-		color: #A1683A;
+		border-color: #a1683a;
+		color: #a1683a;
 	}
-	.btn-primary:hover, .btn-outline-primary:hover {
-		background-color: #A1683A;
+	.btn-primary:hover,
+	.btn-outline-primary:hover {
+		background-color: #a1683a;
 		color: #fbf7f4;
-		border-color: #A1683A;
+		border-color: #a1683a;
 	}
 	.btn-primary:selected {
-		background-color: #A1683A;
+		background-color: #a1683a;
 		color: #fbf7f4;
-		border-color: #A1683A;
+		border-color: #a1683a;
 	}
 	.btn-primary:focus {
-		background-color: #A1683A;
+		background-color: #a1683a;
 		color: #fbf7f4;
-		border-color: #A1683A;
+		border-color: #a1683a;
 		box-shadow: none !important;
 	}
 	.jg-caption {
@@ -156,9 +158,8 @@
 			onclick="filter(this)"
 			filter-attr="*"
 		>
-			All
-		</button>
-		&nbsp;
+			All</button
+		><span style="display: inline-block; width: 1px"></span>
 		<button
 			type="button"
 			class="btn btn-outline-primary"
@@ -166,7 +167,7 @@
 			filter-attr="Nature"
 		>
 			Nature</button
-		>&nbsp;
+		><span style="display: inline-block; width: 1px"></span>
 		<button
 			type="button"
 			class="btn btn-outline-primary"
@@ -174,7 +175,7 @@
 			filter-attr="Aviation"
 		>
 			Aviation</button
-		>&nbsp;
+		><span style="display: inline-block; width: 1px"></span>
 		<button
 			type="button"
 			class="btn btn-outline-primary"

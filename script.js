@@ -48,7 +48,7 @@ fetch("./info2.json")
 	.then((data) => {
 		gallery = $("#animated-thumbnails");
 		gallery.justifiedGallery({
-			randomize: false,
+			randomize: true,
 			captions: true,
 			lastRow: "center",
 			rowHeight: 250,
