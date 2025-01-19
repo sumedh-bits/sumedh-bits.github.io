@@ -3,11 +3,14 @@ body {
     width: 100vw;
     min-height: 100vh;
     align-items: center;
-    background-color: #e3d3ca;
+    background-color: #ead6cb;
+    --primary: #a1683a;
+    --secondary: #fbf7f4;
+    --secondary-dark: 
 }
 .heading-wrapper {
     display: grid;
-    background-color: #a1683a;
+    background-color: var(--primary);
     padding: 5%;
     width: 100vw;
     text-align: center;
@@ -16,7 +19,7 @@ body {
 .heading {
     font-family: GothamPro;
     font-weight: 800;
-    color: #fbf7f4;
+    color: var(--secondary);
     font-size: 4.5vw;
 }
 @media screen and (max-width: 500px) {
@@ -40,6 +43,7 @@ body {
 #animated-thumbnails {
     margin: auto;
     width: 90vw;
+    user-select: none;
 }
 .iso-bold {
     font-weight: 550;
@@ -57,7 +61,7 @@ body {
 .material-icons {
     vertical-align: middle !important;
     padding-bottom: 4px;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .lg-toolbar {
     padding-right: 0.5em;
@@ -72,33 +76,33 @@ body {
     --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
 }
 .btn-primary {
-    background-color: #a1683a;
-    border-color: #a1683a;
-    color: #fbf7f4;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--secondary);
     margin-left: 4px;
     margin-right: 4px;
 }
 .btn-outline-primary {
-    border-color: #a1683a;
-    color: #a1683a;
+    border-color: var(--primary);
+    color: var(--primary);
     margin-left: 4px;
     margin-right: 4px;
 }
 .btn-primary:hover,
 .btn-outline-primary:hover {
-    background-color: #a1683a;
-    color: #fbf7f4;
-    border-color: #a1683a;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--primary);
 }
 .btn-primary:selected {
-    background-color: #a1683a;
-    color: #fbf7f4;
-    border-color: #a1683a;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--primary);
 }
 .btn-primary:focus {
-    background-color: #a1683a;
-    color: #fbf7f4;
-    border-color: #a1683a;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--primary);
     box-shadow: none !important;
 }
 .jg-caption {
