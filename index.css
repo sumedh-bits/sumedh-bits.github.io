@@ -56,8 +56,11 @@ body {
     border: none;
     color: rgba(248,249,250,1);
 }
+.btn-primary-about:focus {
+    background-color: #7a51cc;
+}
 .collapse-custom {
-    max-width: 40%;
+    max-width: 530px;
     margin: auto;
     color: #e9ecef;
 }

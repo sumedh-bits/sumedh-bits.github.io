@@ -1,7 +1,9 @@
 var plugin, gallery, jgplugin, jsondata;
 $(document).ready(function () {
-    if (window.innerWidth < 500)
+    if (window.innerWidth < 500){
         $(".filter-buttons").find("button").addClass("btn-sm");
+        $(".btn-primary-about").addClass("btn-sm");
+    }
     fetch("./info2.json")
         .then((res) => {
             return res.json();
