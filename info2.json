@@ -151,6 +151,14 @@
             "dimensions": "5041-2845",
             "settings": "(Lost the settings)",
             "location": "Nashik"
+        },
+        {
+            "name": "traces.jpg",
+            "group": "Nature",
+            "description": "",
+            "dimensions": "6000-4000",
+            "settings": "15s ISO200 f/20, Stack of 19 captures",
+            "location": "BPGC"
         }
     ]
 }
