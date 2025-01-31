@@ -159,6 +159,14 @@
             "dimensions": "6000-4000",
             "settings": "15s ISO200 f/20, Stack of 19 captures",
             "location": "BPGC"
+        },
+        {
+            "name": "_DSC0667-export.jpg",
+            "group": "Aviation",
+            "description": "",
+            "dimensions": "6000-4000",
+            "settings": "1/800s ISO100 f/6.3",
+            "location": "BPGC"
         }
     ]
 }

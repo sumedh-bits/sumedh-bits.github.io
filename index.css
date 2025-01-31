@@ -48,9 +48,6 @@ body {
     --bs-card-border-color: none;
     border-radius: 5px;
 }
-.card-about-custom {
-    
-}
 .btn-primary-about {
     background-color: #7a51cc;
     border: none;
