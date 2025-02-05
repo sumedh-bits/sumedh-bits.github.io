@@ -97,14 +97,6 @@
             "location": "BPGC"
         },
         {
-            "name": "_DSC0543.jpg",
-            "group": "Aviation",
-            "description": "Indian Navy Poseidon P-8I",
-            "dimensions": "5191-3461",
-            "settings": "1/500s ISO100 f/16.0",
-            "location": "BPGC"
-        },
-        {
             "name": "_DSC0582.jpg",
             "group": "Aviation",
             "description": "IAF Mig-29K",
@@ -163,9 +155,17 @@
         {
             "name": "_DSC0667-export.jpg",
             "group": "Aviation",
-            "description": "",
+            "description": "Indian Navy Boeing Poseidon P-8I",
             "dimensions": "6000-4000",
             "settings": "1/800s ISO100 f/6.3",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC0675-export-2.jpg",
+            "group": "Aviation",
+            "description": "IAF Embraer Legacy 600",
+            "dimensions": "6000-4000",
+            "settings": "1/1600s ISO180 f/6.3",
             "location": "BPGC"
         }
     ]
