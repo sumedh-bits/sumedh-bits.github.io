@@ -167,6 +167,14 @@
             "dimensions": "6000-4000",
             "settings": "1/1600s ISO180 f/6.3",
             "location": "BPGC"
+        },
+        {
+            "name": "_DSC0089-export.jpg",
+            "group": "Aviation",
+            "description": "IAF C130",
+            "dimensions": "3000-2000",
+            "settings": "1/1600s ISO180 f/6.3",
+            "location": "BPGC"
         }
     ]
 }
