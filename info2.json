@@ -173,7 +173,7 @@
             "group": "Aviation",
             "description": "IAF C130",
             "dimensions": "3000-2000",
-            "settings": "1/1600s ISO180 f/6.3",
+            "settings": "1/640s ISO100 f/7.1",
             "location": "BPGC"
         }
     ]
