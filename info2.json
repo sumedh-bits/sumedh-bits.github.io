@@ -183,6 +183,30 @@
             "dimensions": "3000-2000",
             "settings": "1/800s ISO200 f/5.3",
             "location": "BPGC"
+        },
+        {
+            "name": "_DSC1580-export.jpg",
+            "group": "Aviation",
+            "description": "Indian Navy Boeing Poseidon P-8I",
+            "dimensions": "3000-2000",
+            "settings": "1/1000s ISO100 f/5",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC1602-export.jpg",
+            "group": "Animals",
+            "description": "",
+            "dimensions": "3000-2000",
+            "settings": "1/320s ISO1400 f/4.8",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC1611-export.jpg",
+            "group": "Animals",
+            "description": "",
+            "dimensions": "3000-2000",
+            "settings": "1/320s ISO640 f/6.3",
+            "location": "BPGC"
         }
     ]
 }
