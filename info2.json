@@ -123,7 +123,7 @@
         {
             "name": "20221026_061243.jpg",
             "group": "Nature",
-            "description": "Vacations",
+            "description": "",
             "dimensions": "4624-2604",
             "settings": "1/35s ISO500 f/1.8",
             "location": ""
@@ -165,15 +165,15 @@
             "group": "Aviation",
             "description": "IAF Embraer Legacy 600",
             "dimensions": "6000-4000",
-            "settings": "1/1600s ISO180 f/6.3",
+            "settings": "1/1250s ISO180 f/5.3",
             "location": "BPGC"
         },
         {
-            "name": "_DSC0089-export.jpg",
+            "name": "_DSC1649-export.jpg",
             "group": "Aviation",
             "description": "IAF C130",
             "dimensions": "3000-2000",
-            "settings": "1/640s ISO100 f/7.1",
+            "settings": "1/640s ISO360 f/7.1",
             "location": "BPGC"
         },
         {
@@ -207,6 +207,30 @@
             "dimensions": "3000-2000",
             "settings": "1/320s ISO640 f/6.3",
             "location": "BPGC"
+        },
+        {
+            "name": "_DSC0195-export.jpg",
+            "group": "Animals",
+            "description": "",
+            "dimensions": "3000-2000",
+            "settings": "1/400s ISO4000 f/6.3",
+            "location": ""
+        },
+        {
+            "name": "_DSC0011-export.jpg",
+            "group": "Aviation",
+            "description": "Volga-Dnepr Airlines IL76",
+            "dimensions": "3000-2000",
+            "settings": "1/800s ISO100 f/6.3",
+            "location": "Mumbai Airport"
+        },
+        {
+            "name": "_DSC0015-export.jpg",
+            "group": "Aviation",
+            "description": "Volga-Dnepr Airlines IL76",
+            "dimensions": "3000-2000",
+            "settings": "1/800s ISO100 f/6.3",
+            "location": "Mumbai Airport"
         }
     ]
 }
