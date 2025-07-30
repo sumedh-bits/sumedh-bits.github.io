@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #567C73;
+    background-image: url("images/background3.png");
+    background-blend-mode: soft-light;
+    background-size: 100%;
 }
 
 header {
@@ -20,6 +23,46 @@ header {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.separator-dside {
+    border: none;
+  border-top: 3px solid #d8fca8;
+    color: #d8fca8;
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    width: 100%;
+      text-align: center;
+      overflow: visible;
+}
+
+.separator-dside::after {
+    background: #567C73;
+    padding: 0 10px;
+    content: "D Side";
+    position: relative;
+    top: -20px;
+    font-size: 30px;
+}
+
+.separator-cside {
+    border: none;
+  border-top: 3px solid #d8fca8;
+    color: #d8fca8;
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    width: 100%;
+      text-align: center;
+      overflow: visible;
+}
+
+.separator-cside::after {
+    background: #567C73;
+    padding: 0 10px;
+    content: "C Side";
+    position: relative;
+    top: -20px;
+    font-size: 30px;
 }
 
 .cat-item {
