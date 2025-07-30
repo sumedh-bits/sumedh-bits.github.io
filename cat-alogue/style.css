@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #567C73;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Patrick Hand SC", cursive;
+}
+
+.header-text {
+    font-size: 65px;
+}
+
+.cat-list {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #efc20f;
+    border-radius: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cat-name {
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ff6b81;
+    margin: 10px;
+}
+
+.cat-item img {
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.cat-description {
+    flex: 1;
+
+    align-items: start;
+    height: 100%;
+}
+
+.cat-description h2 {
+    margin: 0 0 10px;
+    flex-shrink: 1;
+}
+
+.description-info {
+    font-family: 'Open Sans', sans-serif;
+    color: 333333;
+    font-style: italic;
+    margin: 5px;
+}
+
+.description-text {
+    margin: 3px;
+    font-family: 'Open Sans', sans-serif;
+    color: 333333;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+@media (max-width: 600px) {
+    .cat-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cat-item p {
+        text-align: justify !important;
+    }
+
+    .cat-item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .cat-description {
+        width: 100%;
+    }
+}
