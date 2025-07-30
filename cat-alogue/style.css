@@ -104,16 +104,16 @@ header {
 }
 
 .description-info {
-    font-family: 'Open Sans', sans-serif;
-    color: 333333;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
     font-style: italic;
     margin: 5px;
 }
 
 .description-text {
     margin: 3px;
-    font-family: 'Open Sans', sans-serif;
-    color: 333333;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
     text-align: justify;
     text-justify: inter-word;
 }
