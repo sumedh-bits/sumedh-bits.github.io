@@ -231,6 +231,30 @@
             "dimensions": "3000-2000",
             "settings": "1/800s ISO100 f/6.3",
             "location": "Mumbai Airport"
+        },
+        {
+            "name": "_DSC0718-export.jpg",
+            "group": "Aviation",
+            "description": "IAF Su-30MKI",
+            "dimensions": "3000-2000",
+            "settings": "1/1600s ISO280 f/6.3",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC1597-export.jpg",
+            "group": "Animals",
+            "description": "",
+            "dimensions": "3000-2000",
+            "settings": "1/320s ISO560 f/4.7",
+            "location": "BPGC"
+        },
+        {
+            "name": "_DSC1563-export.jpg",
+            "group": "Aviation",
+            "description": "Glorious MiG-29K",
+            "dimensions": "3000-2000",
+            "settings": "1/120s ISO320 f/6.3",
+            "location": "BPGC"
         }
     ]
 }
