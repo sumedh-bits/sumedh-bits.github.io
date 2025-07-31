@@ -5,7 +5,7 @@ body {
     background-color: #567C73;
     background-image: url("images/background3edited.png");
     background-blend-mode: soft-light;
-    background-size: 100%;
+    background-size: 70%;
 }
 
 header {
@@ -119,6 +119,7 @@ header {
 
 .cat-item img {
     max-width: 300px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 25px;
     margin-right: 20px;
@@ -140,6 +141,7 @@ header {
 .description-info {
     font-family: 'Lexend', sans-serif;
     color: #333333;
+    
     font-style: italic;
     margin: 5px;
 }
@@ -174,5 +176,8 @@ header {
 
     .cat-description {
         width: 100%;
+    }
+    body {
+        background-size: 100%;
     }
 }
