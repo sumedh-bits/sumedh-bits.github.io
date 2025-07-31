@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #567C73;
-    background-image: url("images/background3.png");
+    background-image: url("images/background3edited.png");
     background-blend-mode: soft-light;
     background-size: 100%;
 }
@@ -17,6 +17,25 @@ header {
 
 .header-text {
     font-size: 65px;
+}
+
+.side {
+    display: inline-block;
+    font-size: 50px; 
+    font-family: 'Patrick Hand SC', sans-serif; 
+    padding: 5px;
+    line-height: 43px;
+    border-radius: 10px;
+    height: 51px;
+}
+
+.side-blue {
+    color: #2bf5ff;
+    background-color:#2bf5ff7d;
+}
+.side-green {
+    color: #2bff38;
+    background-color:#2bff386e;
 }
 
 .cat-list {
@@ -75,11 +94,26 @@ header {
     flex-wrap: wrap;
 }
 
+.yellow {
+    background-color: #efc20f;
+}
+
+.pink {
+    background-color: #fb6f84;
+}
+
+.pink .cat-name {
+    color: #ffcf10;
+}
+
+.yellow .cat-name {
+    color: #ff6b81;
+}
+
 .cat-name {
     font-family: "Patrick Hand SC", cursive;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
-    color: #ff6b81;
     margin: 10px;
 }
 
