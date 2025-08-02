@@ -37,6 +37,10 @@ header {
     color: #2bff38;
     background-color:#2bff386e;
 }
+.side-gray {
+    color: #e4e4e4;
+    background-color:#b7b7b799;
+}
 
 .cat-list {
     padding: 40px;
@@ -102,12 +106,20 @@ header {
     background-color: #fb6f84;
 }
 
+.gray {
+    background-color: #7d7d7d;
+}
+
 .pink .cat-name {
     color: #ffcf10;
 }
 
 .yellow .cat-name {
     color: #ff6b81;
+}
+
+.gray .cat-name {
+    color: #cfcfcf;
 }
 
 .cat-name {
@@ -144,6 +156,10 @@ header {
     
     font-style: italic;
     margin: 5px;
+}
+
+.gray .description-text {
+    color: #c3c3c3;
 }
 
 .description-text {
