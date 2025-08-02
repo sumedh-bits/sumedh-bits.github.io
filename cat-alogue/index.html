@@ -102,7 +102,7 @@
 										<p class="cat-name">Kaali</p>
 										<p class="description-info">Location: CH2. Age: <span class="description-info-age"></span>. Female.</p>
 										<p class="description-info">Neutered: <span class="material-icons">check</span> Vaccinated: <span class="material-icons">check</span></p>
-										<p class="description-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum dolor doloribus cupiditate quod maxime neque deserunt. Sit ducimus totam, dolorum iure accusantium illum in, ad vero porro, labore molestiae. Modi harum doloremque velit dolorum vel.</p>
+										<p class="description-text">Her facial expressions are always as if you're up to something.</p>
 								</div>
 						</div>
 
@@ -125,7 +125,7 @@
 										<p class="cat-name">Mia</p>
 										<p class="description-info">Location: CH3. Age: <span class="description-info-age"></span>. Female.</p>
 										<p class="description-info">Neutered: <span class="material-icons">check</span> Vaccinated: <span class="material-icons">check</span></p>
-										<p class="description-text">She balances both outdoors adventures and indoor comforts perfectly. She had a rough start and was rescued from Vasco, but now has become a very pretty kitty thanks to Nupur di.</p>
+										<p class="description-text">She balances both outdoors adventures and indoor comforts perfectly. She had a rough start and was rescued from Vasco, but now has become a very pretty kitty thanks to a student.</p>
 								</div>
 						</div>
 
@@ -147,7 +147,7 @@
 										<p class="cat-name">Godzilla</p>
 										<p class="description-info">Location: CH7. Age: <span class="description-info-age"></span>. Female.</p>
 										<p class="description-info">Neutered: <span class="material-icons">check</span> Vaccinated: <span class="material-icons">check</span></p>
-										<p class="description-text">Angy car.</p>
+										<p class="description-text">Angy car. She doesn't really like pets or hugs, unless she's being fed. Might tolerate if she really likes you.</p>
 								</div>
 						</div>
 
@@ -159,7 +159,7 @@
 										<p class="description-info">aka Taklu/Receding Hairline</p>
 										<p class="description-info">Location: CH7. Age: <span class="description-info-age"></span>. Female</p>
 										<p class="description-info">Neutered: <span class="material-icons">check</span> Vaccinated: <span class="material-icons">check</span></p>
-										<p class="description-text">Alice and Coco look very similar, but Alice's tail is orange while Coco's is black.</p>
+										<p class="description-text">She only likes affection if she initiates it, and is the sweetest when she does. Always hungry, will follow the smell and dig out the food. Alice and Coco look very similar, but Alice's tail is orange while Coco's is black.</p>
 								</div>
 						</div>
 
@@ -224,7 +224,7 @@
 						</div>
 
 						<!-- Yearback -->
-						<div class="yellow cat-item" attr-dob-year="2025" attr-dob-month="01" attr-age-ignore>
+						<div class="yellow cat-item" attr-dob-year="2025" attr-dob-month="01" attr-age-ignore="1">
 								<img src="images/yearback.jpeg" alt="Yearback">
 								<div class="cat-description">
 										<p class="cat-name">Yearback ⚠️</p>
@@ -278,7 +278,7 @@
 										<p class="description-info">Location: AH7. Age: <span class="description-info-age"></span>. Female.<br></p>
 										<p class="description-info">Neutered: <span class="material-icons">check</span> Vaccinated: <span class="material-icons">check</span></p>
 										<p class="description-info">Felix and Fibi are siblings.</p>
-										<p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores. Facilis, nesciunt consequuntur dolorem accusamus quidem unde quisquam, voluptates hic sequi rem magni exercitationem. Assumenda repellat magnam blanditiis explicabo reiciendis.</p>
+										<p class="description-text">Also a very cute and goofy kitten. She shares the braincell with Felix.</p>
 								</div>
 						</div>
 
@@ -340,6 +340,10 @@
 						</div> -->
 
 				</div>
+				<br><br>
+				<div class="footer">
+					<a href="https://github.com/sumedh-bits/sumedh-bits.github.io/tree/main/cat-alogue" target="_blank"><img src="images/github-mark.png" class="footer-github" height="50px"></a>
+				</div>
 		</main>
 </body>
 
@@ -348,7 +352,7 @@
 <script>
 		Array.from(document.querySelectorAll(".cat-item")).forEach(function (e) {
 			console.log(parseInt(e.getAttribute("attr-age-ignore")));
-				if(parseInt(e.getAttribute("attr-age-ignore"))!=null){
+				if(parseInt(e.getAttribute("attr-age-ignore"))!=1){
 						var today = new Date();
 						var currentMonth = today.getMonth() + 1;
 						var currentYear = today.getFullYear();

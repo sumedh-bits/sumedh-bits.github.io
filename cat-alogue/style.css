@@ -170,6 +170,19 @@ header {
     text-justify: inter-word;
 }
 
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-github {
+    transition: all 0.3s ease;
+}
+
+.footer-github:hover {
+    filter: brightness(0) invert(1);  
+}
+
 
 @media (max-width: 600px) {
     .cat-item {
