@@ -255,6 +255,14 @@
             "dimensions": "3000-2000",
             "settings": "1/120s ISO320 f/6.3",
             "location": "BPGC"
+        },
+        {
+            "name": "IL78-more crop.jpg",
+            "group": "Aviation",
+            "description": "IAF IL-78MKI",
+            "dimensions": "3000-2000",
+            "settings": "1/800s ISO200 f/6.3",
+            "location": "BPGC"
         }
     ]
 }
