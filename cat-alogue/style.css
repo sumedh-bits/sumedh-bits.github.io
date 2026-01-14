@@ -162,6 +162,10 @@ header {
     color: #c3c3c3;
 }
 
+.gray-life {
+    font-size: 0.6em;
+}
+
 .description-text {
     margin: 3px;
     font-family: 'Lexend', sans-serif;
