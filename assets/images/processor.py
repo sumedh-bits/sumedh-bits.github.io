@@ -25,3 +25,4 @@ for filename in filenames:
     aperture = img_exif.get(33437)
     json_child = {"name": filename, "group": "", "description": "", "dimensions": str(img.width) + "-" + str(img.height), "settings": "1/"+ str(shutterspeed) + "s ISO" + str(iso) + " f/" + str(aperture), "location": ""}
     print(json.dumps(json_child, indent=4))
+    

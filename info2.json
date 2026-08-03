@@ -18,7 +18,7 @@
         },
         {
             "name": "_DSC0981.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "5550-3700",
             "settings": "1/400s ISO250 f/4.8",
@@ -34,7 +34,7 @@
         },
         {
             "name": "_DSC0461.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "4000-6000",
             "settings": "1/500s ISO560 f/5.3",
@@ -42,7 +42,7 @@
         },
         {
             "name": "_DSC0501.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "6000-4000",
             "settings": "1/1250s ISO3200 f/4.8",
@@ -50,7 +50,7 @@
         },
         {
             "name": "_DSC0731.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "6000-4000",
             "settings": "1/250s ISO900 f/5.3",
@@ -58,7 +58,7 @@
         },
         {
             "name": "_DSC0323.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "Resident fat car",
             "dimensions": "6000-4000",
             "settings": "1/100s ISO450 f/6.0",
@@ -194,7 +194,7 @@
         },
         {
             "name": "_DSC1602-export.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "3000-2000",
             "settings": "1/320s ISO1400 f/4.8",
@@ -202,7 +202,7 @@
         },
         {
             "name": "_DSC1611-export.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "3000-2000",
             "settings": "1/320s ISO640 f/6.3",
@@ -210,7 +210,7 @@
         },
         {
             "name": "_DSC0195-export.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "3000-2000",
             "settings": "1/400s ISO4000 f/6.3",
@@ -242,7 +242,7 @@
         },
         {
             "name": "_DSC1597-export.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "2000-3000",
             "settings": "1/320s ISO560 f/4.7",
@@ -281,7 +281,7 @@
         },
         {
             "name": "DSC_1493.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "",
             "dimensions": "3000-2000",
             "settings": "1/800s ISO200 f/1.7",
@@ -297,7 +297,7 @@
         },
         {
             "name": "DSC_0261-Enhanced-NR.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "Mogu",
             "dimensions": "3000-2000",
             "settings": "1/640s ISO2500 f/1.8",
@@ -305,7 +305,7 @@
         },
         {
             "name": "DSC_0263-Enhanced-NR.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "Mogu",
             "dimensions": "3000-2000",
             "settings": "1/500s ISO1000 f/1.8",
@@ -313,7 +313,7 @@
         },
         {
             "name": "DSC_0586-Enhanced-NR.jpg",
-            "group": "Non-humans",
+            "group": "Cuties",
             "description": "A random squirrel",
             "dimensions": "3000-2000",
             "settings": "1/400s ISO1000 f/6.3",
@@ -382,6 +382,86 @@
             "dimensions": "4219-2813",
             "settings": "1/250s ISO100 f/9",
             "location": "BITS Goa"
+        },
+        {
+            "name": "DSC_0221-Enhanced-NR.JPG",
+            "group": "Cuties",
+            "description": "",
+            "dimensions": "4668-3112",
+            "settings": "1/500s ISO2000 f/5.0",
+            "location": "Singapore Park"
+        },
+        {
+            "name": "DSC_9709.JPG",
+            "group": "Cuties",
+            "description": "",
+            "dimensions": "3931-2621",
+            "settings": "1/400s ISO250 f/1.8",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1066.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "4049-2699",
+            "settings": "1/320s ISO800 f/2.8",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1067.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "3515-5272",
+            "settings": "1/10s ISO100 f/2.5",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1072.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "3663-5495",
+            "settings": "1/200s ISO800 f/2.2",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1074.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "5568-3712",
+            "settings": "1/1s ISO100 f/4",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1075.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "3712-5568",
+            "settings": "1/500s ISO100 f/2.8",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1076.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "3208-4812",
+            "settings": "1/4s ISO100 f/11",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1078.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "4600-2875",
+            "settings": "1/2s ISO100 f/11",
+            "location": "Singapore"
+        },
+        {
+            "name": "IMG_1078.JPG",
+            "group": "Stuff",
+            "description": "",
+            "dimensions": "3712-5568",
+            "settings": "1/500s ISO160 f/3.2",
+            "location": "Singapore"
         }
     ]
 }
