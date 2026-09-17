@@ -41,6 +41,10 @@ header {
     color: #e4e4e4;
     background-color:#b7b7b799;
 }
+.side-orange {
+    color: #ffa700;
+    background-color:#ff780099;
+}
 
 .cat-list {
     padding: 40px;
@@ -109,6 +113,8 @@ header {
 .gray {
     background-color: #7d7d7d;
 }
+
+
 
 .pink .cat-name {
     color: #ffcf10;
